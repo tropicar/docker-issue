@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+ test:
+    build:
+      context: .
+    image: "package"
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 5000M
